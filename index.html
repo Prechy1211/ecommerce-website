@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title>Perfect Shades</title>
+</head>
+
+<body>
+
+	<div class="header">
+
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<img src="images/logo-transparent.png" alt="perfect shades" width="125px" height="65px">
+				</div>
+				<nav>
+					<ul id="menuItems">
+						<li><a href="">Home</a></li>
+						<li><a href="">Products</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</nav>
+				<img src="images/menu.png" class="menu-icon" onclick="menu()">
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<h1>HELLO SUNSHINE!</h1>
+					<p>What defines your style more than a pair of sunglasses.<br>
+						Look good and protect your eyes with a pair of sunglasses from Perfect Shades.
+						<br>Shine inside and out.
+					</p>
+					<a href="" class="btn">Explore Now &#10145;</a>
+				</div>
+				<div class="col-2">
+					<img src="images/background.png" alt="sunglass">
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!--------featured categories--------->
+
+	<div class="categories">
+		<div class="small-container">
+			<h2 class="title">Featured Categories</h2>
+			<div class="row">
+				<div class="col-3">
+					<img src="images/men.jpg">
+					<h4>MEN</h4>
+				</div>
+				<div class="col-3">
+					<img src="images/women.jpg">
+					<h4>WOMEN</h4>
+				</div>
+				<div class="col-3">
+					<img src="images/children.jpg">
+					<h4>CHILDREN</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ---------offer--------- -->
+	<div class="offer">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-2">
+					<img src="images/offer.png" class="offer-img">
+				</div>
+				<div class="col-2">
+					<p>LIMITED EDITION RAY-BAN x DISNEY</p>
+					<h1>Justin Mickey A20</h1>
+					<small>Get inspired by the limited edition Justin Mickey A20 and stay
+						ahead of the style game with this two times iconic style.</small><br>
+						<a href="" class="btn">Buy Now &#10145;</a>			
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- ------------footer---------- -->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<img src="images/white.png">
+				<p>Our purpose to help protect your eyes and at the same time look stylish</p>
+			</div>
+			<div class="footer-col-2">
+				<h3>Useful Links</h3>
+				<ul>
+					<a href=""><li>About Us</li></a>
+					<a href=""><li>Contact us</li></a>
+					<a href=""><li>Return Policy</li></a>
+					<a href=""><li>Join Affiliate</li></a>
+				</ul>
+			</div>
+			<div class="footer-col-3">
+				<h3>Follow Us</h3>
+				<ul>
+					<a href=""><li>Facebook</li></a>
+					<a href=""><li>Twitter</li></a>
+					<a href=""><li>Instagram</li></a>
+					<a href=""><li>LinkedIn</li></a>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">Copyright 2020 - Prechy</p>
+	</div>
+</div>
+
+<!----------js for menu------------->
+<script>
+	var menuItems = document.getElementById("menuItems")
+
+	menuItems.style.maxHeight = "0px";
+	
+	function menu(){
+		if(menuItems.style.maxHeight == "0px") {
+			menuItems.style.maxHeight = "200px";
+		} else {
+			menuItems.style.maxHeight = "0px";
+		}
+	}
+</script>
+</body>
+
+</html>
