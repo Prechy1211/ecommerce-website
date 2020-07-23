@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title>Our Story</title>
+</head>
+
+<body>
+
+	<div class="header">
+
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<img src="images/logo-transparent.png" alt="perfect shades" width="125px" height="65px">
+				</div>
+				<nav>
+					<ul id="menuItems">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="product.html">Products</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+				<img src="images/menu.png" class="menu-icon" onclick="menu()">
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<img src="images/background.png" alt="sunglass">
+				</div>
+				<div class="col-2">
+					<h1>WHO WE ARE</h1>
+					<p>
+						Welcome to Perfect Shades, your number one store for all things sunglasses.
+						<br>We're dedicated to providing you quality sunglasses,
+						<br>with an emphasis on good UV protection and style at a price that won't break the bank.
+						<br>Our team consists for individuals who are all lovers of sunglasses.
+						<br>We hope you enjoy the products as much as we enjoy offering them to you.
+						<br>If you have any questions or comments, please don't hesitate to contact us.
+						<br>Sincerely,
+						<br>Precious Okafor
+						<br> CEO
+
+					</p>
+				</div>
+				
+			</div>
+		</div>
+
+	</div>
+
+	<!--------our team--------->
+
+	
+		<div class="small-container">
+			<h2 class="title">Our Team</h2>
+			<div class="row">
+				<div class="col-3">
+					<img src="images/director.jpg">
+					<h4>Praise Okafor</h4>
+					<p>Managing Director</p>
+				</div>
+				<div class="col-3">
+					<img src="images/sales.jpg">
+					<h4>Katherine Joshua</h4>
+					<p>Sales Manager</p>
+				</div>
+				<div class="col-3">
+					<img src="images/cfo.jpg">
+					<h4>Francis Eni</h4>
+					<p>CFO</p>
+				</div>
+			</div>
+		</div>
+	
+
+	<!-- ------------footer---------- -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<img src="images/white.png">
+					<p>Our aim is to help protect your eyes and at the same time look stylish</p>
+				</div>
+				<div class="footer-col-2">
+					<h3>Useful Links</h3>
+					<ul>
+						<a href="about.html">
+							<li>About Us</li>
+						</a>
+						<a href="contact.html">
+							<li>Contact us</li>
+						</a>
+						<a href="">
+							<li>Return Policy</li>
+						</a>
+						<a href="">
+							<li>Join Affiliate</li>
+						</a>
+					</ul>
+				</div>
+				<div class="footer-col-3">
+					<h3>Follow Us</h3>
+					<ul>
+						<a href="">
+							<li>Facebook</li>
+						</a>
+						<a href="">
+							<li>Twitter</li>
+						</a>
+						<a href="">
+							<li>Instagram</li>
+						</a>
+						<a href="">
+							<li>LinkedIn</li>
+						</a>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Need help?</h3>
+					<p>Contact us</p>
+					<ul>
+						<li>+2348143463800</li>
+						<li>preciousrobinsonokafor@gmail.com</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright 2020 - Prechy</p>
+		</div>
+	</div>
+
+	<!----------js for menu------------->
+	<script>
+		var menuItems = document.getElementById("menuItems")
+
+		menuItems.style.maxHeight = "0px";
+
+		function menu() {
+			if (menuItems.style.maxHeight == "0px") {
+				menuItems.style.maxHeight = "200px";
+			} else {
+				menuItems.style.maxHeight = "0px";
+			}
+		}
+	</script>
+</body>
+
+</html>

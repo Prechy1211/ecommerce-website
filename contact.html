@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+	<title>All Products | Perfect Shades</title>
+</head>
+
+<body>
+
+	<div class="header">
+
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<img src="images/logo-transparent.png" alt="perfect shades" width="125px" height="65px">
+				</div>
+				<nav>
+					<ul id="menuItems">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="product.html">Products</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+				<img src="images/menu.png" class="menu-icon" onclick="menu()">
+			</div>
+			
+		</div>
+
+	</div>
+
+<!-------------Products-------------------->
+<div class="small-container">
+	<h2 class="title">Contact Us</h2>
+	<div class="row">
+		<form action="contact.html">
+			<input type="text" value="First Name" name="fstn">
+			<input type="text" value="Last Name" name="lstn">
+			<input type="email" value="Email Address" name="email">
+			<input type="tel" value="Phone Number" name="tel">
+			<textarea name="messages" id="messages" cols="30" rows="10">Leave a message</textarea>
+		</form>
+	</div>
+</div>
+
+	
+<!-- ------------footer---------- -->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<img src="images/white.png">
+				<p>Our aim is to help protect your eyes and at the same time look stylish</p>
+			</div>
+			<div class="footer-col-2">
+				<h3>Useful Links</h3>
+				<ul>
+					<a href="about.html"><li>About Us</li></a>
+					<a href="contact.html"><li>Contact us</li></a>
+					<a href=""><li>Return Policy</li></a>
+					<a href=""><li>Join Affiliate</li></a>
+				</ul>
+			</div>
+			<div class="footer-col-3">
+				<h3>Follow Us</h3>
+				<ul>
+					<a href=""><li>Facebook</li></a>
+					<a href=""><li>Twitter</li></a>
+					<a href=""><li>Instagram</li></a>
+					<a href=""><li>LinkedIn</li></a>
+				</ul>
+			</div>
+			<div class="footer-col-4">
+				<h3>Need help?</h3>
+				<p>Contact us</p>
+				<ul>
+					<li>+2348143463800</li>
+					<li>preciousrobinsonokafor@gmail.com</li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">Copyright 2020 - Prechy</p>
+	</div>
+</div>
+
+<!----------js for menu------------->
+<script>
+	var menuItems = document.getElementById("menuItems")
+
+	menuItems.style.maxHeight = "0px";
+	
+	function menu(){
+		if(menuItems.style.maxHeight == "0px") {
+			menuItems.style.maxHeight = "200px";
+		} else {
+			menuItems.style.maxHeight = "0px";
+		}
+	}
+</script>
+</body>
+
+</html>
