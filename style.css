@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 	font-family: Helvetica, Arial, sans-serif;
 }
+body {
+	background: rgb(214,222,225);
+	background: radial-gradient(circle, rgba(214,222,225,1) 0%, rgba(187,172,133,1) 100%);
+}
 /* navbar */
 .navbar {
 	display: flex;
@@ -67,10 +71,7 @@ p {
 .btn:hover {
 	background-color: #b09b70;
 }
-.header {
-	background: rgb(214,222,225);
-	background: radial-gradient(circle, rgba(214,222,225,1) 0%, rgba(187,172,133,1) 100%);
-}
+
 .header .row {
 	margin-top: 70px;
 }
@@ -150,7 +151,7 @@ small{
 	color: #fff;
 	margin-bottom: 20px;
 }
-.footer-col-1, .footer-col-2, .footer-col-3 {
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
 	min-width: 250px;
 	margin-bottom: 20px;
 }
@@ -226,6 +227,7 @@ input, textarea {
 	font-size: 20px;
 	border: 1px solid #86792a81;
 	color: rgb(12, 12, 2);
+	border-radius: 5px;
 }
 textarea:focus, input:focus {
 	outline: none;
@@ -241,7 +243,7 @@ textarea:focus, input:focus {
 		position: absolute;
 		top: 85px;
 		left: 0;
-		background: #333;
+		background: radial-gradient(circle, rgba(214,222,225,1) 0%, rgba(187,172,133,1) 100%);
 		width: 100%;
 		overflow: hidden;
 		transition: max-height 0.5s;
@@ -252,9 +254,7 @@ textarea:focus, input:focus {
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-	nav ul li a {
-		color: white;
-	}
+	
 	.menu-icon {
 		display: block;
 		cursor: pointer
